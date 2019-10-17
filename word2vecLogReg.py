@@ -8,6 +8,7 @@ import re
 model = word2vec.KeyedVectors.load_word2vec_format\
     ("GoogleNews-vectors-negative300.bin", binary=True)
 
+file = open("redditComments_train.jsonlist",'r')
 
 
 def getVector(w):
